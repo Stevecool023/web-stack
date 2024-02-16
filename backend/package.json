@@ -1,0 +1,16 @@
+{
+  "name": "web-stack",
+  "version": "1.0.0",
+  "description": "This file contains instructions on how to set up and run the project, along with any additional information about the project.",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.13.2"
+  }
+}

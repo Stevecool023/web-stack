@@ -1,0 +1,78 @@
+<!DOCTYPE hmtl>
+
+<!-- This file serves as the main entry point for web application. -->
+<!-- It contains the structure of the HTML page. -->
+
+<html lang="en-Us">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Management System</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+
+  <body>
+    <header>
+      <h1>Hospital Management System</h1>
+    </header>
+
+    <main>
+
+      <!-- Login form content -->
+      <div id="loginForm">
+        <h2>Login</h2>
+        <form id="loginForm">
+          <div>
+            <label for="nationalId">National ID:</label>
+            <input type="text" id="nationalId" name="nationalId" required>
+          </div>
+          <div>
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+          </div>
+          <button type="submit">Login</button>
+        </form>
+        <p id="loginError"></p>
+      </div>
+
+      <div id="patientList"></div>
+      <!-- A search input field -->
+      <input type="text" id="searchInput" placeholder="Search by National ID">
+
+      <!-- Error message container to HTML -->
+      <div id="errorContainer"></div>
+
+      <!-- A patient dashboard for viewing and updating info, profile, and history -->
+      <div id="patientDashboard">
+        <h2>Welcome, <span id="patientName"></span>!</h2>
+        <div id="medicalHistory"></div>
+        <div id="profileForm">
+          <h3>Update Profile</h3>
+          <form id="updateProfileForm">
+            <div>
+              <label for="familyHistory">Family History:</label>
+              <input type="text" id="familyHistory" name="familyHistory">
+            </div>
+            <button type="submit">Update Profile</button>
+          </form>
+          <p id="profileUpdateSuccess"></p>
+          <p id="profileUpdateError"></p>
+
+          <!-- Input field for entering the new password to the HTML file: -->
+          <div>
+            <label for="newPassword">New Password:</label>
+            <input type="password" id="newPassword" name="newPassword">
+          </div>
+
+          <!-- A logout button to the patient dashboard: -->
+          <button id="logoutButton">Logout</button>
+        </div>
+      </div>
+
+    </main>
+    <footer>
+      <p>&copy; 2024 Hospital Management System</p>
+    </footer>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
