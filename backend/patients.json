@@ -1,0 +1,28 @@
+[
+  {
+    "nationalId": "123456789",
+    "password": "password123",
+    "medicalHistory": [
+      {
+        "date": "2023-01-01",
+        "hospital": "Hospital A",
+        "diagnosis": "Cold",
+        "medications": ["Medication A", "Medication B"]
+      }
+    ],
+    "familyHistory": "Heart desease"
+  },
+  {
+    "nationalId": "987654321",
+    "password": "securepassword",
+    "medicalHistory": [
+      {
+        "date": "2023-02-15",
+        "hospital": "Hospital B",
+        "diagnosis": "Flu",
+        "medications": ["Medication C"]
+      }
+    ],
+    "familyHistory": "Diabetes"
+  }
+]
